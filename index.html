@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example</title>
+	<link rel="stylesheet" type="text/css" href="src/knotify.css">
+</head>
+<body>
+<button onclick="toastify_('Hello World')">Message</button>
+<script type="text/javascript" src="src/jquery.min.js"></script>
+<script type="text/javascript" src="src/knotify.js"></script>
+<script type="text/javascript">
+function toastify_(message) {
+  knotify.create({
+    text: message,
+    type:'dark',
+    important:true,
+    icon:'icon',
+    duration:5000
+  });
+}
+</script>
+</body>
+</html>
